@@ -8,6 +8,19 @@
  * @author Anika Henke <anika@selfthinker.org>
  */
 
+:root {
+    --color-white: #fff;
+
+    --color-dark-0: #c9c9c9;
+    --color-dark-4: #424242;
+    --color-dark-6: #2e2e2e;
+
+    --color-blue-8: #1971c2;
+    --color-blue-9: #1864ab;
+
+    --radius-sm: 0.25rem;
+}
+
 html {
     overflow-x: auto;
     overflow-y: scroll;
@@ -15,12 +28,12 @@ html {
 html,
 body {
     color: @ini_text;
-    background: @ini_background_site url(images/page-gradient.png) top left repeat-x;
+    background: @ini_background_site;
     margin: 0;
     padding: 0;
 }
 body {
-    font: normal 87.5%/1.4 Arial, sans-serif;
+    font: normal 87.5%/1.4 Helvetica, Arial, sans-serif;
     /* default font size: 100% => 16px; 93.75% => 15px; 87.5% => 14px; 81.25% => 13px; 75% => 12px */
     -webkit-text-size-adjust: 100%;
 }
@@ -148,7 +161,7 @@ li li {
     font-size: 100%;
 }
 
-ul             { list-style: square outside; }
+ul             { list-style: disc outside; }
 ol             { list-style: decimal outside; }
 ol ol          { list-style-type: lower-alpha; }
 ol ol ol       { list-style-type: upper-roman; }
@@ -358,8 +371,8 @@ meter,
 progress {
     font: inherit;
     font-weight: normal;
-    color: #333;
-    background-color: #fff;
+    color: var(--color-dark-0);
+    background-color: var(--color-dark-6);
     line-height: normal;
     margin: 0;
     vertical-align: middle;
@@ -385,9 +398,8 @@ input,
 textarea,
 select,
 keygen {
-    border: 1px solid #ccc;
-    box-shadow: inset 0 0 1px #eee;
-    border-radius: 2px;
+    border: 1px solid var(--color-dark-4);
+    border-radius: var(--radius-sm);
 }
 input:active,
 input:focus,
@@ -397,7 +409,7 @@ select:active,
 select:focus,
 keygen:active,
 keygen:focus {
-    border-color: #999;
+    border-color: var(--color-blue-8);
 }
 input[type=radio],
 input[type=checkbox],
@@ -415,14 +427,14 @@ input.button,
 a.button,
 button,
 .qq-upload-button {
-    color: #333;
-    background-color: #eee;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc4MjQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNEY0RjQiIG9mZnNldD0iMC4zIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0VFRUVFRSIgb2Zmc2V0PSIwLjk5Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI0NDQ0NDQyIgb2Zmc2V0PSIuOTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnODI0KSIgLz4KPC9zdmc+);
-    background-image: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 30%, #eeeeee 99%, #cccccc 99%);
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: .1em .5em;
+    color: var(--color-white);
+    background-color: var(--color-blue-8);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.125rem;
     cursor: pointer;
+    font-weight: 600;
+    border: none;
+    margin: 0.125rem;
 }
 
 input[type=submit]:hover,
@@ -444,10 +456,7 @@ button:hover,
 button:active,
 button:focus,
 .qq-upload-button:hover {
-    border-color: #999;
-    background-color: #ddd;
-    background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc2NzAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNGNEY0RjQiIG9mZnNldD0iMC4zIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0RERERERCIgb2Zmc2V0PSIwLjk5Ii8+PHN0b3Agc3RvcC1jb2xvcj0iI0JCQkJCQiIgb2Zmc2V0PSIuOTkiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNjcwKSIgLz4KPC9zdmc+);
-    background-image: linear-gradient(to bottom, #ffffff 0%, #f4f4f4 30%, #dddddd 99%, #bbbbbb 99%);
+    background-color: var(--color-blue-9);
 }
 
 input::-moz-focus-inner,
