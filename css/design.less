@@ -139,11 +139,16 @@ form.search {
 
     input {
         width: 18em;
-        padding: .35em 22px .35em .1em;
+        padding: 0.3125rem 0.5rem;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: var(--color-blue-8);
     }
 
     button {
-        background: transparent url(images/search.png) no-repeat 0 0;
+        background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23c9c9c9" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>') no-repeat 0 0;
         border-width: 0;
         width: 19px;
         height: 14px;
@@ -156,7 +161,7 @@ form.search {
 
 [dir=rtl] form.search {
     input {
-        padding: .35em .1em .35em 22px;
+        padding: 0.3125rem 0.5rem;
     }
 
     button {
@@ -254,7 +259,7 @@ form.search {
     }
 
     a:link,
-    a:visited {
+    a:visited:not(a:missing) {
         color: @ini_link;
         background-color: inherit;
     }
@@ -278,14 +283,12 @@ form.search {
 
     span {
         font-size: 0.875em;
-        border: solid @ini_background_alt;
+        border: solid @ini_border;
         border-width: 1px 1px 0;
         background-color: @ini_background;
         color: @ini_text_alt;
-        padding: .1em .35em;
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-        box-shadow: 0 0 .5em @ini_text_alt;
+        padding: .25rem .35rem;
+        border-radius: 0.25rem 0.25rem 0 0;
         display: block;
     }
 }
@@ -294,10 +297,9 @@ form.search {
     clear: both;
     background: @ini_background;
     color: inherit;
-    border: 1px solid @ini_background_alt;
-    box-shadow: 0 0 .5em @ini_text_alt;
-    border-radius: 2px;
-    padding: 1.556em 2em 2em;
+    border: 1px solid @ini_border;
+    border-radius: 0.35rem 0 0.35rem 0.35rem;
+    padding: 1.5rem 2rem;
     margin-bottom: .5em;
     overflow: hidden;
     word-wrap: break-word;
@@ -307,11 +309,15 @@ form.search {
     font-size: 0.875em;
     text-align: right;
     overflow-wrap: break-word;
+    font-style: italic;
+    color: var(--color-dark-2);
 }
 
 /* license note under edit window */
 .dokuwiki div.license {
     font-size: 93.75%;
+    color: var(--color-dark-2);
+
 }
 
 [dir=rtl] .dokuwiki .docInfo {

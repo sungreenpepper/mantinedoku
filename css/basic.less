@@ -12,11 +12,15 @@
     --color-white: #fff;
 
     --color-dark-0: #c9c9c9;
+    --color-dark-1: #b8b8b8;
+    --color-dark-2: #828282;
     --color-dark-4: #424242;
     --color-dark-6: #2e2e2e;
 
     --color-blue-8: #1971c2;
     --color-blue-9: #1864ab;
+
+    --color-green-3: #8ce99a;
 
     --radius-sm: 0.25rem;
 }
@@ -55,6 +59,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--color-white);
     font-weight: bold;
     padding: 0;
     line-height: 1.2;
@@ -477,4 +482,13 @@ textarea[readonly] {
     cursor: auto;
     opacity: .5;
     background-color: #eee;
+}
+
+/* Success info box */
+div.success {
+    background-color: rgba(64,192,87,.15);
+    border: none;
+    color: var(--color-white);
+    padding: 0.75rem 2.25rem;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>');
 }
