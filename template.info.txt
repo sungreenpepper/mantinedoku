@@ -1,0 +1,7 @@
+base     mantinewiki
+author   sungreenpepper
+email    sungreenpepper@outlook.com
+date     2024-02-24
+name     Mantine DokuWiki
+desc     DokuWiki's default template modernised using styling from Mantine UI
+url      
