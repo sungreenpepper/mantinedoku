@@ -38,10 +38,22 @@
 .dokuwiki label.block select,
 .dokuwiki label.block input.edit {
   width: 50%;
+  padding: 0.3125rem 0.5rem;
+}
+
+.dokuwiki label.block input.edit:focus {
+  outline: none;
+}
+
+.dokuwiki label.block input.edit:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-dark-6);
+  color: var(--color-dark-2);
 }
 
 .dokuwiki label span {
     vertical-align: middle;
+    margin-right: 0.25rem;
 }
 
 .dokuwiki fieldset {
@@ -103,4 +115,10 @@
 #subscribe__form label {
     display: block;
     margin: 0 0.5em 0.5em;
+}
+
+#dw__login fieldset,
+#dw__resendpwd fieldset,
+#dw__register fieldset {
+  border-radius: 0.25rem;
 }
