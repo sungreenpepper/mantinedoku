@@ -9,8 +9,7 @@
 }
 
 .qq-uploader .error {
-    color: #f00;
-    background-color: #fff;
+    color: var(--color-red-3);
 }
 
 /* select file button */
@@ -117,6 +116,12 @@ div.qq-uploader ul {
 .qq-upload-cancel {
     font-size: 85%;
 }
+
+.qq-upload-size {
+    color: var(--color-dark-1);
+    font-style: italic;
+}
+
 .qq-upload-cancel {
     text-transform: capitalize;
     color: var(--color-red-3) !important;
