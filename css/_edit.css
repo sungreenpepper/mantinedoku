@@ -168,6 +168,7 @@ button[name="do[cancel]"]:hover {
 
 .dokuwiki.hasSidebar div.preview {
     border: 0px !important;
+    border-top: solid 1px @ini_border !important;
 }
 
 /* section edit buttons
