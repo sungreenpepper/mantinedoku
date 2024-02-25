@@ -13,7 +13,7 @@
 }
 .dokuwiki a.wikilink2:link,
 .dokuwiki a.wikilink2:visited {
-    border-bottom: 1px dashed;
+    border-bottom: 1px dotted;
 }
 .dokuwiki a.wikilink2:hover,
 .dokuwiki a.wikilink2:active,

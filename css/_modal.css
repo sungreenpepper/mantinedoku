@@ -4,35 +4,90 @@
 
 .dokuwiki .ui-widget {
     font-size: 100%;
+    border-color: @ini_border;
+    padding: 0.5rem;
 }
 
+.ui-widget-header {
+    background: none;
+    background-color:@ini_background;
+    border: none;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.ui-dialog .ui-dialog-titlebar:hover {
+    background-color: var(--color-dark-6);
+}
+
+.ui-dialog .ui-dialog-title {
+    color: var(--color-white);
+}
 
 /* link wizard (opens from the link button in the edit toolbar)
 ********************************************************************/
 
 #link__wiz {
+    background-color: @ini_background;
 }
 
 [dir=rtl] #link__wiz_close {
     float: left;
 }
 
+#link__wiz .ui-dialog-content div:first-child:not(.odd) {
+    color: var(--color-white);
+    padding: 0 0.5rem;
+}
+
+#link__wiz .ui-dialog-content div:first-child input:focus {
+    outline: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    right: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.ui-button:hover .ui-dialog .ui-dialog-titlebar-close span,
+.ui-dialog .ui-dialog-titlebar-close span,
+.ui-button:hover .ui-icon {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>');
+}
+
+.ui-button,
+.ui-button:hover {
+    background: none;
+    background-color: var(--color-dark-5);
+}
+
 #link__wiz_result {
-    background-color: @ini_background;
+    background-color: var(--color-dark-6);
+    color: var(--color-dark-1);
     width:  293px;
     height: 193px;
     overflow: auto;
     border: 1px solid @ini_border;
-    margin: 3px auto;
     text-align: left;
     line-height: 1;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0.25rem 0.5rem;
+
+    font-style: italic;
 }
 [dir=rtl] #link__wiz_result {
     text-align: right;
 }
 
 #link__wiz_result div {
-    padding: 3px 3px 3px 0;
+    padding: 0.5rem 0.25rem;
+    border-bottom: solid 1px @ini_border;
+    font-style: initial;
 }
 
 #link__wiz_result div a {
@@ -40,6 +95,7 @@
     padding-left: 22px;
     min-height: 16px;
     background: transparent 3px center no-repeat;
+    background-color: var(--color-dark-6);
 }
 [dir=rtl] #link__wiz_result div a {
     padding: 3px 22px 3px 3px;
@@ -50,15 +106,15 @@
     background-image: url(../../images/up.png);
 }
 #link__wiz_result div.type_f a {
-    background-image: url(../../images/page.png);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-filled" width="24" height="24" viewBox="3 0 32 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z" stroke-width="0" fill="%234dabf7" /><path d="M19 7h-4l-.001 -4.001z" stroke-width="0" fill="%234dabf7" /></svg>')
 }
 #link__wiz_result div.type_d a {
-    background-image: url(../../images/ns.png);
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-seam" width="20" height="20" viewBox="3 0 24 24" stroke-width="1.5" stroke="%23ffe066" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M8.2 9.8l7.6 -4.6" /><path d="M12 12v9" /><path d="M12 12l-8 -4.5" /></svg>');
 }
 
-#link__wiz_result div.even {
+/* #link__wiz_result div.even {
     background-color: @ini_background_neu;
-}
+} */
 
 #link__wiz_result div.selected {
     background-color: @ini_background_alt;
