@@ -14,10 +14,13 @@
     --color-dark-0: #c9c9c9;
     --color-dark-1: #b8b8b8;
     --color-dark-2: #828282;
+    --color-dark-3: #696969;
     --color-dark-4: #424242;
     --color-dark-5: #3b3b3b;
     --color-dark-6: #2e2e2e;
+    --color-dark-7: #242424;
 
+    --color-blue-4: #4dabf7;
     --color-blue-8: #1971c2;
     --color-blue-9: #1864ab;
 
@@ -483,6 +486,13 @@ textarea[readonly] {
     cursor: auto;
     opacity: .5;
     background-color: #eee;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    background-color: var(--color-dark-6);
+    color: var(--color-dark-3);
+    opacity: 1;
 }
 
 /* Success info box */

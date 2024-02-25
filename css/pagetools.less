@@ -61,6 +61,7 @@
                     line-height: @item-height;
                     vertical-align: middle;
                     height: @item-height;
+                    color: var(--color-dark-1);
 
                     span {
                         display: none; // hide label until hover
@@ -73,7 +74,7 @@
                         margin: 0 @ico-margin;
                         display: inline-block;
                         vertical-align: middle;
-                        fill: @ini_border;
+                        fill: var(--color-dark-1);
                     }
                 }
 
@@ -81,7 +82,8 @@
                 a:active,
                 a:focus,
                 a:hover {
-                    background-color: @ini_background_alt;
+                    background-color: var(--color-dark-6);
+                    color: var(--color-blue-4);
 
                     span {
                         display: inline-block;
@@ -112,10 +114,9 @@
 // on hover or focus show all items
 #dokuwiki__pagetools:hover, #dokuwiki__pagetools:focus-within {
     div.tools ul {
-        background-color: @ini_background;
+        background-color: var(--color-dark-7);
         border-color: @ini_border;
-        border-radius: 2px;
-        box-shadow: 2px 2px 2px @ini_text_alt;
+        border-radius: 0.25rem;
 
         li a span {
             display: inline-block;
