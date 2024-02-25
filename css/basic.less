@@ -20,6 +20,10 @@
     --color-dark-6: #2e2e2e;
     --color-dark-7: #242424;
 
+    --color-gray-4:#ced4da;
+    --color-gray-7: #495057;
+    --color-gray-8: #343a40;
+
     --color-blue-4: #4dabf7;
     --color-blue-8: #1971c2;
     --color-blue-9: #1864ab;
@@ -27,6 +31,7 @@
     --color-green-3: #8ce99a;
 
     --color-red-3: #ffa8a8;
+    --color-red-8: #e03131;
 
     --radius-sm: 0.25rem;
 }
@@ -444,8 +449,8 @@ button,
     padding: 0.5rem 1.125rem;
     cursor: pointer;
     font-weight: 600;
-    border: none;
     margin: 0.125rem;
+    border: solid 1px var(--color-blue-8);
 }
 
 input[type=submit]:hover,
@@ -468,6 +473,7 @@ button:active,
 button:focus,
 .qq-upload-button:hover {
     background-color: var(--color-blue-9);
+    border-color: var(--color-blue-9);
 }
 
 input::-moz-focus-inner,

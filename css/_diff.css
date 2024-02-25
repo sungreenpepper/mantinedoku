@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 .dokuwiki table.diff th.minor {
-    color: #999;
+    color: var(--color-dark-2);
 }
 .dokuwiki table.diff_sidebyside th {
     width: 50%;

@@ -49,7 +49,19 @@ div.picker.pk_hl {
 div.picker button.pickerbutton,
 div.picker button.toolbutton {
     padding: .1em .35em;
-    border-width: 0;
+    border: solid 1px @ini_border;
+    background-color: var(--color-dark-6);
+}
+
+div.picker {
+    background-color: var(--color-dark-7);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+div.picker button.pickerbutton:hover,
+div.picker button.toolbutton:hover {
+    background-color: var(--color-dark-5);
 }
 
 /*____________ edit textarea ____________*/
@@ -60,11 +72,42 @@ div.picker button.toolbutton {
     resize: vertical;
 }
 
+.dokuwiki textarea.edit:focus,
+.dokuwiki textarea.edit:active {
+    outline: none;
+}
+
 /*____________ below the textarea ____________*/
 
 .dokuwiki div.editBar {
     overflow: hidden;
     margin-bottom: .5em;
+}
+
+#edbtn__save {
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+#edbtn__preview {
+    color: var(--color-blue-4);
+    background-color: transparent;
+    border: solid 1px var(--color-blue-4);
+    margin-right: 0.5rem;
+}
+
+#edbtn__preview:hover {
+    background-color: rgba(77,171,247,.05);
+}
+
+button[name="do[cancel]"] {
+    color: var(--color-gray-4);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button[name="do[cancel]"]:hover {
+    background-color: hsla(210,7%,56%,.2);
 }
 
 /* size and wrap controls */
@@ -81,7 +124,7 @@ div.picker button.toolbutton {
 /* edit buttons */
 .dokuwiki .editBar .editButtons {
     display: inline;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 [dir=rtl] .dokuwiki .editBar .editButtons {
     margin-right: 0;
@@ -102,21 +145,29 @@ div.picker button.toolbutton {
     vertical-align: middle;
 }
 .dokuwiki .editBar .summary input {
+    padding: 0.3125rem 0.5rem;
+}
+.dokuwiki .editBar .summary input:focus {
+    outline: none;
 }
 /* change background colour if summary is missing */
 .dokuwiki .editBar .summary input.missing {
     color: @ini_text;
-    background-color: #ffcccc;
+    border-color: var(--color-red-8);
 }
 
 /* preview
 ********************************************************************/
 
 .dokuwiki div.preview {
-    border: dotted @ini_border;
-    border-width: .2em 0;
+    border: solid 0px @ini_border;
+    border-top-width: 1px;
     padding: 1.4em 0;
     margin-bottom: 1.4em;
+}
+
+.dokuwiki.hasSidebar div.preview {
+    border: 0px !important;
 }
 
 /* section edit buttons
@@ -124,13 +175,24 @@ div.picker button.toolbutton {
 
 .dokuwiki .secedit {
     float: right;
-    margin-top: -1.4em;
+    margin-top: -1.5em;
 }
 [dir=rtl] .dokuwiki .secedit {
     float: left;
 }
 .dokuwiki .secedit button {
     font-size: 75%;
+    padding: 0.25rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color: var(--color-gray-8);
+    border-color: var(--color-gray-8);
+    font-weight: bold;
+}
+
+.dokuwiki .secedit button:hover {
+    background-color: var(--color-gray-7);
+    border-color: var(--color-gray-7);
 }
 
 /* style for section highlighting */
@@ -139,4 +201,5 @@ div.picker button.toolbutton {
     padding: 0 .5em;
     border: solid @ini_background_alt;
     border-width: 0 .5em;
+    background-color: @ini_background_alt;
 }
