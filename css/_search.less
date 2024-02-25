@@ -8,13 +8,15 @@
 
 /* search hit in normal text */
 .dokuwiki .search_hit {
-    color: @ini_text;
-    background-color: __highlight__;
+    color: #000;
+    background-color: var(--color-yellow-5);
 }
 
 /* "nothing found" at search + media */
 .dokuwiki div.nothing {
     margin-bottom: 1.4em;
+    color: var(--color-gray-1);
+    text-align: center;
 }
 
 /* search results page
@@ -24,13 +26,38 @@
 .dokuwiki .search-results-form fieldset.search-form {
     width: 100%;
     margin: 1em 0;
+    border-radius: 0.25rem;
 
     input[name="q"] {
         width: 50%;
+        padding: 0.3125rem 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    input[name="q"]:focus {
+        outline: none;
+    }
+
+    button {
+        padding: 0.3125rem 0.625rem;
     }
 
     button.toggleAssistant {
         float: right;
+        background-color: transparent;
+        color: var(--color-blue-3);
+        border-color: transparent;
+    }
+
+    button[type="submit"] {
+        background-color: rgba(34,139,230,.15);
+        color: var(--color-blue-3);
+        border-color: transparent;
+    }
+
+    button[type="submit"]:hover,
+    button.toggleAssistant:hover {
+        background-color: rgba(34,139,230,.2);
     }
 
     .advancedOptions {
@@ -52,9 +79,11 @@
                 text-overflow: ellipsis;
 
                 &::after {
-                    content: '▼';
+                    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 20" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
                     font-size: smaller;
                     color: @ini_text_alt;
+                    margin-left: 0.25rem;
+                    vertical-align: middle;
                 }
             }
             div.changed {
@@ -72,6 +101,7 @@
                 max-height: 50vh;
                 overflow: auto;
                 z-index: 100;
+                border-radius: 0.25rem;
                 li {
                     margin: 0.25em 0;
                     list-style: none;
@@ -85,7 +115,7 @@
             // open toggle state
             &.open {
                 div.current::after {
-                    content: '▲';
+                    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="16" height="16" viewBox="0 0 24 20" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>');
                 }
 
                 ul {
@@ -137,6 +167,7 @@
     /* last modified line */
     dd.meta {
         margin: 0 0 .2em 0;
+        font-style: italic;
     }
 
     /* search snippet */
@@ -201,4 +232,10 @@
     left: auto;
     right: -13.5em;
     text-align: right;
+}
+
+#qsearch__out {
+    border: solid 1px @ini_border;
+    border-radius: 0.25rem;
+    box-shadow: none;
 }

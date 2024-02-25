@@ -80,13 +80,13 @@
     padding-right: 0;
 }
 .dokuwiki ul.idx li {
-    list-style-image: url(../../images/bullet.png);
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-filled" width="8" height="8" viewBox="-5 -5 32 32" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z" stroke-width="0" fill="%23ffffff" /></svg>');
 }
 .dokuwiki ul.idx li.open {
-    list-style-image: url(../../images/open.png);
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="12" height="12" viewBox="0 0 18 16" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
 }
 .dokuwiki ul.idx li.closed {
-    list-style-image: url(../../images/closed.png);
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="12" height="12" viewBox="0 0 18 18" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>');
 }
 [dir=rtl] .dokuwiki ul.idx li.closed {
     list-style-image: url(../../images/closed-rtl.png);
