@@ -21,10 +21,18 @@
     font-size: 100%;
     cursor: pointer;
     margin: 1px 1px 5px;
+    background-color: rgba(34,139,230,.15);
+    border: solid 1px transparent;
+    color: var(--color-blue-3);
 }
 
 .qq-upload-button-focus {
-    outline: 1px dotted;
+    outline: none;
+}
+
+.qq-upload-button:hover {
+    background-color: rgba(34,139,230,.2);
+    border: solid 1px transparent;
 }
 
 /* drop area */
@@ -37,9 +45,10 @@
     height: 100%;
     min-height: 70px;
     z-index: 2;
-    background: @ini_background_neu;
+    background: var(--color-dark-6);
     color: @ini_text;
     text-align: center;
+    border-radius: 0.25rem;
 }
 
 .qq-upload-drop-area span {
@@ -49,10 +58,15 @@
     width: 100%;
     margin-top: -8px;
     font-size: 120%;
+    color: var(--color-white);
 }
 
 .qq-upload-drop-area-active {
-    background: @ini_background_alt;
+    background: var(--color-dark-7);
+}
+
+.qq-upload-drop-area-active span {
+    color: var(--color-gray-1);
 }
 
 /* list of files to upload */
@@ -74,9 +88,21 @@ div.qq-uploader ul {
     margin-right: 5px;
 }
 
+.qq-uploader li input {
+    padding: 0.3125rem 0.5rem;
+}
+
+.qq-uploader li input:focus {
+    outline: none;
+}
+
 .qq-upload-file {
     display: block;
     font-weight: bold;
+}
+
+.qq-upload-list li:hover {
+    background-color: @ini_background !important;
 }
 
 .qq-upload-spinner {
@@ -90,6 +116,15 @@ div.qq-uploader ul {
 .qq-upload-size,
 .qq-upload-cancel {
     font-size: 85%;
+}
+.qq-upload-cancel {
+    text-transform: capitalize;
+    color: var(--color-red-3) !important;
+    font-weight: bold;
+}
+.qq-upload-cancel:hover {
+    text-decoration: none !important;
+    color: var(--color-red-4) !important;
 }
 
 .qq-upload-failed-text {
