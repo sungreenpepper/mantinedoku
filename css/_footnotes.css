@@ -25,6 +25,8 @@ div.insitu-footnote {
 }
 .dokuwiki div.footnotes div.fn div.content {
     display: inline;
+    font-style: italic;
+    color: var(--color-dark-2);
 }
 .dokuwiki div.footnotes div.fn sup a.fn_bot {
     font-weight: bold;
