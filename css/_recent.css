@@ -56,10 +56,12 @@
 }
 
 .dokuwiki form.changes li .sizechange.positive {
-    background-color: #cfc;;
+    background-color: rgba(64,192,87,.15);
+    color: var(--color-green-3);
 }
 .dokuwiki form.changes li .sizechange.negative {
-    background-color: #fdd;
+    background-color: rgba(250,82,82,.15);
+    color: var(--color-red-3);
 }
 
 /*____________ page navigator ____________*/
@@ -72,4 +74,8 @@
 .dokuwiki div.pagenav-next {
     display: inline;
     margin: 0 .5em;
+}
+
+#page__revisions ul li {
+    padding: 0.25rem 0;
 }
