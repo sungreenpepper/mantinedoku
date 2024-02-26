@@ -907,6 +907,47 @@ div.li:has(img[src="/lib/images/plus.gif"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>');
 }
 
+/* template style settings */
+button[name="run[preview]"],
+button[name="run[reset]"],
+button[name="run[revert]"] {
+    border-color: transparent;
+}
+
+button[name="run[preview]"] {
+    background-color: rgba(34,139,230,.2);
+    color: var(--color-blue-3);
+}
+button[name="run[preview]"]:hover {
+    background-color: rgba(34,139,230,.2);
+}
+
+button[name="run[reset]"] {
+    background-color: rgba(250,176,5,.15);
+    color: var(--color-yellow-3);
+}
+button[name="run[reset]"]:hover {
+    background-color: rgba(250,176,5,.2);
+}
+
+button[name="run[revert]"] {
+    background-color: transparent;
+    color: var(--color-red-3);
+}
+button[name="run[revert]"]:hover {
+    background-color: rgba(250,82,82,.2);
+}
+
+input, textarea, select, keygen {
+    padding: 0.3125rem 0.5rem;
+}
+input:focus, textarea:focus, select:focus, keygen:focus {
+    outline: none;
+}
+input[type="color"] {
+    padding: 0;
+}
+
 /* config manager icons */
 #config__manager td.label {
     position: relative;
