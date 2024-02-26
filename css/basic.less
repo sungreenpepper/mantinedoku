@@ -850,6 +850,63 @@ a[title="Log Out"]:hover::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14l-4 -4l4 -4" /><path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg>');
 }
 
+/* Access Control List Management */
+#acl_manager .aclpage {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /></svg>');
+    background-repeat: 0;
+}
+
+.dokuwiki input.edit,
+.dokuwiki select.edit {
+    padding: 0.3125rem 0.5rem;
+}
+
+.dokuwiki input.edit:focus,
+.dokuwiki select.edit:focus {
+    outline: none;
+}
+
+input[name="acl_w"] {
+    margin: 0 0.5rem;
+}
+
+#acl_manager .aclns {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-seam" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23c9c9c9" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M8.2 9.8l7.6 -4.6" /><path d="M12 12v9" /><path d="M12 12l-8 -4.5" /></svg>');
+}
+
+#acl_manager .aclgroup {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users-group" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23c9c9c9" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" /><path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M17 10h2a2 2 0 0 1 2 2v1" /><path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M3 13v-1a2 2 0 0 1 2 -2h2" /></svg>');
+}
+
+#acl_manager label {
+    margin-right: 1rem;
+}
+
+div.li:has(img[src="/lib/images/minus.gif"]),
+div.li:has(img[src="/lib/images/plus.gif"]) {
+    position: relative;
+}
+
+div.li:has(img[src="/lib/images/minus.gif"]) img,
+div.li:has(img[src="/lib/images/plus.gif"]) img {
+    opacity: 0;
+}
+
+div.li:has(img[src="/lib/images/minus.gif"])::before,
+div.li:has(img[src="/lib/images/plus.gif"])::before {
+    position: absolute;
+    top: 1px;
+    left: -2px;
+}
+
+div.li:has(img[src="/lib/images/minus.gif"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
+}
+
+div.li:has(img[src="/lib/images/plus.gif"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>');
+}
+
 /* config manager icons */
 #config__manager td.label {
     position: relative;
