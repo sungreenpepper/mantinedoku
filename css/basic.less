@@ -30,6 +30,7 @@
     --color-blue-9: #1864ab;
 
     --color-green-3: #8ce99a;
+    --color-green-6: #40c057;
 
     --color-red-3: #ffa8a8;
     --color-red-4: #ff8787;
@@ -37,6 +38,10 @@
 
     --color-yellow-3: #ffe066;
     --color-yellow-5: #fcc419;
+
+    --color-orange-5: #ff922b;
+
+    --color-violet-3: #b197fc;
 
     --radius-sm: 0.25rem;
 }
@@ -440,6 +445,11 @@ input[type=image] {
     box-shadow: none;
 }
 
+input[type=checkbox] {
+    accent-color: var(--color-blue-4);
+    background-color: red;
+}
+
 /* all types of buttons */
 input[type=submit],
 input[type=button],
@@ -536,4 +546,80 @@ div.success {
     color: var(--color-white);
     padding: 0.75rem 2.25rem;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>');
+}
+
+// Select control
+.dokuwiki select.edit {
+    padding: 0.3125rem 0.5rem !important;
+}
+
+.dokuwiki select.edit:focus {
+    outline: none;
+}
+
+// in-line code
+pre, code, samp, kbd {
+    font-family: Consolas, Liberation Mono, Courier New, monospace;
+    background-color: var(--color-dark-5);
+    color: var(--color-white);
+    padding: 0.125rem 0.3125rem;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+// code highlight
+pre {
+    box-shadow: none;
+    background-color: var(--color-dark-6);
+    color: var(--color-white);
+    border-radius: 0.25rem;
+}
+
+pre li div:first-child {
+    border-left: solid 1px var(--color-dark-3);
+}
+
+.code .ln-xtra {
+    background-color: rgba(250,176,5,.15);
+}
+
+.code li::marker, .code::marker .li1::marker {
+    color: var(--color-dark-1);
+}
+
+// custom code highlight colors
+
+.code .kw1,
+.code .kw8 {
+    color: var(--color-violet-3);
+}
+
+.code .br0,
+.code .sy0 {
+    color: var(--color-dark-1);
+}
+
+.code .kw13,
+.code .kw14,
+.code .kw15,
+.code .kw16,
+.code .me1,
+.code .me2 {
+    color: var(--color-orange-5);
+}
+
+.code .re1,
+.code .st0,
+.code .st_h {
+    color: var(--color-green-6);
+}
+
+.code .co1,
+.code .coMULTI,
+.code .sc-1 {
+    color: #98C379;
+}
+
+.code .kw2 {
+    color: #CF68E1;
 }
