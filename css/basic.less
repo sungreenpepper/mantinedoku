@@ -19,6 +19,7 @@
     --color-dark-5: #3b3b3b;
     --color-dark-6: #2e2e2e;
     --color-dark-7: #242424;
+    --color-dark-8: #1F1F1F;
 
     --color-gray-4:#ced4da;
     --color-gray-7: #495057;
@@ -1119,4 +1120,98 @@ button.enable:hover {
 #extension__list .legend a.info:hover,
 #extension__list .legend a.info.close:hover {
     background-color: var(--color-dark-6);
+}
+
+/* TABLES */
+.table thead:first-child tr:first-child th {
+    border-top: solid 1px @ini_border;
+}
+
+/* edittable plugin */
+.htContextMenu table.htCore,
+.htContextMenu table.htCore tbody {
+    border: solid 1px @ini_border;
+    border-radius: 0.25rem;
+}
+
+.htContextMenu table.htCore tr {
+    background-color: transparent;
+}
+
+.htContextMenu table.htCore tr:first-child td {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.htContextMenu table.htCore tr:last-child td {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.htContextMenu table.htCore td {
+    background-color: var(--color-dark-7);
+    color: var(--color-dark-1);
+}
+
+.htContextMenu table tbody tr td.current,
+.htContextMenu table tbody tr td.zeroclipboard-is-hover {
+    background-color: var(--color-dark-6);
+}
+
+.htContextMenu table tbody tr td.htDisabled,
+.htContextMenu table tbody tr td.htDisabled:hover {
+    background-color: var(--color-dark-8);
+    cursor: not-allowed;
+}
+
+.htContextMenu table tbody tr td.htSeparator {
+    border-top: solid 1px @ini_border;
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.toggle_header {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heading" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12h10" /><path d="M7 5v14" /><path d="M17 5v14" /><path d="M15 19h4" /><path d="M15 5h4" /><path d="M5 19h4" /><path d="M5 5h4" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.align_left {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-left" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l10 0" /><path d="M4 18l14 0" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.align_center {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-center" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M8 12l8 0" /><path d="M6 18l12 0" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.align_right {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-right" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M10 12l10 0" /><path d="M6 18l14 0" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.row_above {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-row-insert-top" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 18v-4a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" /><path d="M12 9v-4" /><path d="M10 7l4 0" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.remove_row {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-row-remove" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23ffa8a8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 6v4a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1z" /><path d="M10 16l4 4" /><path d="M10 20l4 -4" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.row_below {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-row-insert-bottom" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 6v4a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1z" /><path d="M12 15l0 4" /><path d="M14 17l-4 0" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.col_left {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-column-insert-left" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1z" /><path d="M5 12l4 0" /><path d="M7 10l0 4" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.remove_col {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-column-remove" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23ffa8a8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1z" /><path d="M16 10l4 4" /><path d="M16 14l4 -4" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.col_right {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-column-insert-right" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1z" /><path d="M15 12l4 0" /><path d="M17 10l0 4" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.mergeCells div.merge {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-filled" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11h4a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-2a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-6a1 1 0 0 1 1 -1z" stroke-width="0" fill="%23b8b8b8" /><path d="M21 12v6a3 3 0 0 1 -2.824 2.995l-.176 .005h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h8a1 1 0 0 1 1 1z" stroke-width="0" fill="%23b8b8b8" /><path d="M18 3a3 3 0 0 1 2.995 2.824l.005 .176v2a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h6z" stroke-width="0" fill="%23b8b8b8" /><path d="M9 4v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1v-2a3 3 0 0 1 2.824 -2.995l.176 -.005h2a1 1 0 0 1 1 1z" stroke-width="0" fill="%23b8b8b8" /></svg>');
+}
+
+.htContextMenu table tbody tr td div.htItemWrapper.mergeCells div.unmerge {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" /><path d="M3 10h18" /><path d="M10 3v18" /></svg>');
 }
