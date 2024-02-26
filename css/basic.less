@@ -28,17 +28,25 @@
     --color-blue-4: #4dabf7;
     --color-blue-8: #1971c2;
     --color-blue-9: #1864ab;
+    --color-blue-light: rgba(34,139,230,.15);
+    --color-blue-light-hover: rgba(34,139,230,.2);
 
     --color-green-3: #8ce99a;
     --color-green-6: #40c057;
+    --color-green-light: rgba(64,192,87,.15);
+    --color-green-light-hover: rgba(64,192,87,.2);
 
     --color-red-3: #ffa8a8;
     --color-red-4: #ff8787;
     --color-red-5: #FF6B6B;
     --color-red-8: #e03131;
+    --color-red-light: rgba(250,82,82,.15);
+    --color-red-light-hover: rgba(250,82,82,.2);
 
     --color-yellow-3: #ffe066;
     --color-yellow-5: #fcc419;
+    --color-yellow-light: rgba(250,176,5,.15);
+    --color-yellow-light-hover: rgba(250,176,5,.2);
 
     --color-orange-3: #ffc078;
     --color-orange-5: #ff922b;
@@ -449,7 +457,6 @@ input[type=image] {
 
 input[type=checkbox] {
     accent-color: var(--color-blue-4);
-    background-color: red;
 }
 
 /* all types of buttons */
@@ -528,7 +535,7 @@ button[type="reset"] {
 }
 
 button[type="reset"]:hover {
-    background-color: rgba(250,82,82,.2);
+    background-color: var(--color-red-light-hover);
 }
 
 button[name="regen"] {
@@ -935,7 +942,7 @@ button[name="run[revert]"] {
     color: var(--color-red-3);
 }
 button[name="run[revert]"]:hover {
-    background-color: rgba(250,82,82,.2);
+    background-color: var(--color-red-light-hover);
 }
 
 input, textarea, select, keygen {
@@ -946,6 +953,59 @@ input:focus, textarea:focus, select:focus, keygen:focus {
 }
 input[type="color"] {
     padding: 0;
+}
+input[type="file"] {
+    margin: 0 0.5rem;
+}
+.centeralign {
+    text-align: unset !important;
+}
+
+/* user manager */
+#user__manager button[disabled] {
+    border: solid 1px transparent !important;
+    background-color: var(--color-dark-6);
+    color: var(--color-dark-3) !important;
+}
+
+button[name="fn[delete]"],
+button[name="fn[export]"],
+button[name="fn[search][clear]"] {
+    border-color: transparent;
+}
+
+button[name="fn[delete]"] {
+    background-color: var(--color-red-light);
+    color: var(--color-red-3);
+}
+button[name="fn[delete]"]:hover {
+    background-color: var(--color-red-light-hover);
+}
+
+button[name="fn[export]"] {
+    background-color: var(--color-green-light);
+    color: var(--color-green-3);
+}
+button[name="fn[export]"]:hover {
+    background-color: var(--color-green-light-hover);
+}
+
+button[name="fn[search][clear]"] {
+    background-color: var(--color-yellow-light);
+    color: var(--color-yellow-3);
+}
+button[name="fn[search][clear]"]:hover {
+    background-color: var(--color-yellow-light-hover);
+}
+
+input[name="fn[search][new]"] {
+    padding: 0.125rem 0.5rem;
+    background-color: var(--color-blue-light);
+    border-color: transparent;
+}
+input[name="fn[search][new]"]:hover {
+    background-color: var(--color-blue-light-hover);
+    border-color: transparent;
 }
 
 /* config manager icons */
@@ -993,7 +1053,7 @@ button.uninstall {
     color: var(--color-red-3);
 }
 button.uninstall:hover{
-    background-color: rgba(250,82,82,.2);
+    background-color: var(--color-red-light-hover);
 }
 
 button.disable {
