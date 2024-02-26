@@ -17,8 +17,11 @@
 }
 #draft__status {
     float: right;
-    color: @ini_text_alt;
+    color: var(--color-dark-1);
     background-color: inherit;
+    font-style: italic;
+    font-size: 90%;
+    padding-top: 0.4rem;
 }
 [dir=rtl] #draft__status {
     float: left;
@@ -119,6 +122,22 @@ button[name="do[cancel]"]:hover {
 }
 #size__ctl img {
     cursor: pointer;
+    margin-left: 0.25rem;
+}
+
+#size__ctl img[src="/lib/images/larger.gif"],
+#size__ctl img[src="/lib/images/smaller.gif"],
+#size__ctl img[src="/lib/images/wrap.gif"] {
+    border: solid 1px transparent;
+    border-radius: 0.25rem;
+    padding: .25rem .35rem;
+    width: 1rem;
+}
+
+#size__ctl img[src="/lib/images/larger.gif"]:hover,
+#size__ctl img[src="/lib/images/smaller.gif"]:hover,
+#size__ctl img[src="/lib/images/wrap.gif"]:hover {
+    background-color: var(--color-dark-6);
 }
 
 /* edit buttons */
