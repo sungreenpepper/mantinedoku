@@ -890,27 +890,35 @@ input[name="acl_w"] {
 }
 
 div.li:has(img[src="/lib/images/minus.gif"]),
-div.li:has(img[src="/lib/images/plus.gif"]) {
+div.li:has(img[src="/lib/images/plus.gif"]),
+li:has(img[src="/lib/images/minus.gif"]),
+li:has(img[src="/lib/images/plus.gif"]) {
     position: relative;
 }
 
 div.li:has(img[src="/lib/images/minus.gif"]) img,
-div.li:has(img[src="/lib/images/plus.gif"]) img {
+div.li:has(img[src="/lib/images/plus.gif"]) img,
+li:has(img[src="/lib/images/minus.gif"]) img,
+li:has(img[src="/lib/images/plus.gif"]) img {
     opacity: 0;
 }
 
 div.li:has(img[src="/lib/images/minus.gif"])::before,
-div.li:has(img[src="/lib/images/plus.gif"])::before {
+div.li:has(img[src="/lib/images/plus.gif"])::before,
+li:has(img[src="/lib/images/minus.gif"])::before,
+li:has(img[src="/lib/images/plus.gif"])::before {
     position: absolute;
-    top: 1px;
+    top: 2px;
     left: -2px;
 }
 
-div.li:has(img[src="/lib/images/minus.gif"])::before {
-    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
+div.li:has(img[src="/lib/images/minus.gif"])::before,
+li:has(img[src="/lib/images/minus.gif"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>') !important;
 }
 
-div.li:has(img[src="/lib/images/plus.gif"])::before {
+div.li:has(img[src="/lib/images/plus.gif"])::before,
+li:has(img[src="/lib/images/plus.gif"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="14" height="14" viewBox="0 0 24 24" stroke-width="2.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>');
 }
 

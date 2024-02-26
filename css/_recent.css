@@ -83,7 +83,9 @@
 /* diff custom icon */
 
 .dokuwiki form.changes li a.diff_link,
-.dokuwiki form.changes li a.revisions_link {
+.dokuwiki form.changes li a.revisions_link,
+a:has(img[title="Show differences to current revisions"]),
+a:has(img[title="Old revisions"]) {
     vertical-align: middle;
     display: inline-block;
     width: 1rem;
@@ -91,26 +93,33 @@
 }
 
 .dokuwiki form.changes li a.diff_link img,
-.dokuwiki form.changes li a.revisions_link img {
+.dokuwiki form.changes li a.revisions_link img,
+a:has(img[title="Show differences to current revisions"]) img,
+a:has(img[title="Old revisions"]) img {
     display: none;
 }
 
 .dokuwiki form.changes li a.diff_link::before,
-.dokuwiki form.changes li a.revisions_link::before {
+.dokuwiki form.changes li a.revisions_link::before,
+a:has(img[title="Show differences to current revisions"])::before {
     width: 16px;
     height: 16px;
 }
 
-.dokuwiki form.changes li a.diff_link::before {
+.dokuwiki form.changes li a.diff_link::before,
+a:has(img[title="Show differences to current revisions"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stereo-glasses" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="%23696969" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 3h-2l-3 9" /><path d="M16 3h2l3 9" /><path d="M3 12v7a1 1 0 0 0 1 1h4.586a1 1 0 0 0 .707 -.293l2 -2a1 1 0 0 1 1.414 0l2 2a1 1 0 0 0 .707 .293h4.586a1 1 0 0 0 1 -1v-7h-18z" /><path d="M7 16h1" /><path d="M16 16h1" /></svg>');
 }
-.dokuwiki form.changes li a.diff_link:hover::before {
+.dokuwiki form.changes li a.diff_link:hover::before,
+a:hover:has(img[title="Show differences to current revisions"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stereo-glasses" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 3h-2l-3 9" /><path d="M16 3h2l3 9" /><path d="M3 12v7a1 1 0 0 0 1 1h4.586a1 1 0 0 0 .707 -.293l2 -2a1 1 0 0 1 1.414 0l2 2a1 1 0 0 0 .707 .293h4.586a1 1 0 0 0 1 -1v-7h-18z" /><path d="M7 16h1" /><path d="M16 16h1" /></svg>');
 }
 
-.dokuwiki form.changes li a.revisions_link::before {
+.dokuwiki form.changes li a.revisions_link::before,
+a:has(img[title="Old revisions"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-share" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="%23696969" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.943 13.016a9 9 0 1 0 -8.915 7.984" /><path d="M16 22l5 -5" /><path d="M21 21.5v-4.5h-4.5" /><path d="M12 7v5l2 2" /></svg>');
 }
-.dokuwiki form.changes li a.revisions_link:hover::before {
+.dokuwiki form.changes li a.revisions_link:hover::before,
+a:hover:has(img[title="Old revisions"])::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-share" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.943 13.016a9 9 0 1 0 -8.915 7.984" /><path d="M16 22l5 -5" /><path d="M21 21.5v-4.5h-4.5" /><path d="M12 7v5l2 2" /></svg>');
 }
