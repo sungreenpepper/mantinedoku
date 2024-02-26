@@ -204,3 +204,323 @@ button[name="do[cancel]"]:hover {
     border-width: 0 .5em;
     background-color: @ini_background_alt;
 }
+
+
+/* Toolbar icons */
+#picker2 button {
+    color: var(--color-dark-1);
+}
+
+button[title="Level 1 Headline [1]"],
+button[title="Level 2 Headline [2]"],
+button[title="Level 3 Headline [3]"],
+button[title="Level 4 Headline [4]"],
+button[title="Level 5 Headline [5]"],
+#picker2 button,
+#picker3 button {
+    min-height: 1.625rem;
+    min-width: 1.625rem;
+}
+
+button[title="Bold Text [B]"],
+button[title="Italic Text [I]"],
+button[title="Underlined Text [U]"],
+button[title="Monospaced Text [M]"],
+button[title="Strike-through Text [D]"],
+button[title="Same Level Headline [8]"],
+button[title="Lower Headline [9]"],
+button[title="Higher Headline [0]"],
+button[title="Select Headline"],
+button[title="Internal Link [L]"],
+button[title="External Link"],
+button[title="Ordered List Item [-]"],
+button[title="Unordered List Item [.]"],
+button[title="Horizontal Rule"],
+button[title="Add Images and other files (opens in a new window)"],
+button[title="Smileys"],
+button[title="Special Chars"],
+button[title="Insert Signature [Y]"],
+button[title="Insert a new table"],
+button[title="Wrap Plugin"],
+button[title="Level 1 Headline [1]"],
+button[title="Level 2 Headline [2]"],
+button[title="Level 3 Headline [3]"],
+button[title="Level 4 Headline [4]"],
+button[title="Level 5 Headline [5]"],
+button[title="columns"],
+button[title="simple centered box"],
+button[title="info box"],
+button[title="tip box"],
+button[title="important box"],
+button[title="alert box"],
+button[title="help box"],
+button[title="download box"],
+button[title="todo box"],
+button[title="clear floats"],
+button[title="especially emphasised"],
+button[title="highlighted"],
+button[title="less significant"] {
+    position: relative;
+}
+button[title="Bold Text [B]"] img,
+button[title="Italic Text [I]"] img,
+button[title="Underlined Text [U]"] img,
+button[title="Monospaced Text [M]"] img,
+button[title="Strike-through Text [D]"] img,
+button[title="Same Level Headline [8]"] img,
+button[title="Lower Headline [9]"] img,
+button[title="Higher Headline [0]"] img,
+button[title="Select Headline"] img,
+button[title="Internal Link [L]"] img,
+button[title="External Link"] img,
+button[title="Ordered List Item [-]"] img,
+button[title="Unordered List Item [.]"] img,
+button[title="Horizontal Rule"] img,
+button[title="Add Images and other files (opens in a new window)"] img,
+button[title="Smileys"] img,
+button[title="Special Chars"] img,
+button[title="Insert Signature [Y]"] img,
+button[title="Insert a new table"] img,
+button[title="Wrap Plugin"] img,
+button[title="Level 1 Headline [1]"] img,
+button[title="Level 2 Headline [2]"] img,
+button[title="Level 3 Headline [3]"] img,
+button[title="Level 4 Headline [4]"] img,
+button[title="Level 5 Headline [5]"] img,
+button[title="columns"] img,
+button[title="simple centered box"] img,
+button[title="info box"] img,
+button[title="tip box"] img,
+button[title="important box"] img,
+button[title="alert box"] img,
+button[title="help box"] img,
+button[title="download box"] img,
+button[title="todo box"] img,
+button[title="clear floats"] img,
+button[title="especially emphasised"] img,
+button[title="highlighted"] img,
+button[title="less significant"] img {
+    display: none;
+}
+
+button[title="Bold Text [B]"]::before,
+button[title="Italic Text [I]"]::before,
+button[title="Underlined Text [U]"]::before,
+button[title="Monospaced Text [M]"]::before,
+button[title="Strike-through Text [D]"]::before,
+button[title="Same Level Headline [8]"]::before,
+button[title="Lower Headline [9]"]::before,
+button[title="Higher Headline [0]"]::before,
+button[title="Select Headline"]::before,
+button[title="Internal Link [L]"]::before,
+button[title="External Link"]::before,
+button[title="Ordered List Item [-]"]::before,
+button[title="Unordered List Item [.]"]::before,
+button[title="Horizontal Rule"]::before,
+button[title="Add Images and other files (opens in a new window)"]::before,
+button[title="Smileys"]::before,
+button[title="Special Chars"]::before,
+button[title="Insert Signature [Y]"]::before,
+button[title="Insert a new table"]::before,
+button[title="Wrap Plugin"]::before,
+button[title="Level 1 Headline [1]"]::before,
+button[title="Level 2 Headline [2]"]::before,
+button[title="Level 3 Headline [3]"]::before,
+button[title="Level 4 Headline [4]"]::before,
+button[title="Level 5 Headline [5]"]::before,
+button[title="columns"]::before,
+button[title="simple centered box"]::before,
+button[title="info box"]::before,
+button[title="tip box"]::before,
+button[title="important box"]::before,
+button[title="alert box"]::before,
+button[title="help box"]::before,
+button[title="download box"]::before,
+button[title="todo box"]::before,
+button[title="clear floats"]::before,
+button[title="especially emphasised"]::before,
+button[title="highlighted"]::before,
+button[title="less significant"]::before {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+}
+
+button[title="Bold Text [B]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bold" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 5h6a3.5 3.5 0 0 1 0 7h-6z" /><path d="M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7" /></svg>');
+}
+
+button[title="Italic Text [I]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-italic" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 5l6 0" /><path d="M7 19l6 0" /><path d="M14 5l-4 14" /></svg>');
+}
+
+button[title="Underlined Text [U]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-underline" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 5v5a5 5 0 0 0 10 0v-5" /><path d="M5 19h14" /></svg>');
+}
+
+button[title="Monospaced Text [M]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>');
+}
+
+button[title="Strike-through Text [D]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-strikethrough" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M16 6.5a4 2 0 0 0 -4 -1.5h-1a3.5 3.5 0 0 0 0 7h2a3.5 3.5 0 0 1 0 7h-1.5a4 2 0 0 1 -4 -1.5" /></svg>');
+}
+
+button[title="Same Level Headline [8]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heading" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12h10" /><path d="M7 5v14" /><path d="M17 5v14" /><path d="M15 19h4" /><path d="M15 5h4" /><path d="M5 19h4" /><path d="M5 5h4" /></svg>');
+    top: 0.3125rem;
+    left: 0.4rem;
+}
+
+button[title="Same Level Headline [8]"]::after {
+    position: absolute;
+    top: 0.1875rem;
+    left: -0.25rem;
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus-vertical" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5v14" /></svg>');
+}
+
+button[title="Lower Headline [9]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>');
+    top: 0.3125rem;
+    left: -0.125rem;
+}
+
+button[title="Lower Headline [9]"]::after {
+    position: absolute;
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heading" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12h10" /><path d="M7 5v14" /><path d="M17 5v14" /><path d="M15 19h4" /><path d="M15 5h4" /><path d="M5 19h4" /><path d="M5 5h4" /></svg>');
+    top: 0.3125rem;
+    left: 0.5rem;
+}
+
+button[title="Higher Headline [0]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>');
+    top: 0.3125rem;
+    right: -0.5rem;
+}
+
+button[title="Higher Headline [0]"]::after {
+    position: absolute;
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heading" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12h10" /><path d="M7 5v14" /><path d="M17 5v14" /><path d="M15 19h4" /><path d="M15 5h4" /><path d="M5 19h4" /><path d="M5 5h4" /></svg>');
+    top: 0.3125rem;
+    right: 0.5rem;
+}
+
+button[title="Select Headline"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heading" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 12h10" /><path d="M7 5v14" /><path d="M17 5v14" /><path d="M15 19h4" /><path d="M15 5h4" /><path d="M5 19h4" /><path d="M5 5h4" /></svg>');
+}
+
+button[title="Internal Link [L]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>');
+}
+
+button[title="External Link"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>');
+}
+
+button[title="Ordered List Item [-]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-numbers" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 6h9" /><path d="M11 12h9" /><path d="M12 18h8" /><path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4" /><path d="M6 10v-6l-2 2" /></svg>');
+}
+
+button[title="Unordered List Item [.]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l11 0" /><path d="M9 12l11 0" /><path d="M9 18l11 0" /><path d="M5 6l0 .01" /><path d="M5 12l0 .01" /><path d="M5 18l0 .01" /></svg>');
+}
+
+button[title="Horizontal Rule"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-separator-horizontal" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 12l16 0" /><path d="M8 8l4 -4l4 4" /><path d="M16 16l-4 4l-4 -4" /></svg>');
+}
+
+button[title="Add Images and other files (opens in a new window)"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-photo" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 8h.01" /><path d="M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z" /><path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5" /><path d="M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3" /></svg>');
+}
+
+button[title="Smileys"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile-beam" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" /><path d="M10 10c-.5 -1 -2.5 -1 -3 0" /><path d="M17 10c-.5 -1 -2.5 -1 -3 0" /><path d="M14.5 15a3.5 3.5 0 0 1 -5 0" /></svg>');
+}
+
+button[title="Special Chars"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-omega" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19h5v-1a7.35 7.35 0 1 1 6 0v1h5" /></svg>');
+}
+
+button[title="Insert Signature [Y]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-signature" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17c3.333 -3.333 5 -6 5 -8c0 -3 -1 -3 -2 -3s-2.032 1.085 -2 3c.034 2.048 1.658 4.877 2.5 6c1.5 2 2.5 2.5 3.5 1l2 -3c.333 2.667 1.333 4 3 4c.53 0 2.639 -2 3 -2c.517 0 1.517 .667 3 2" /></svg>');
+}
+
+button[title="Insert a new table"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table-plus" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.5 21h-7.5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" /><path d="M3 10h18" /><path d="M10 3v18" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>');
+}
+
+button[title="Wrap Plugin"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-seam" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5v9l-8 4.5l-8 -4.5v-9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M8.2 9.8l7.6 -4.6" /><path d="M12 12v9" /><path d="M12 12l-8 -4.5" /></svg>');
+}
+
+button[title="Level 1 Headline [1]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-h-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 18v-8l-2 2" /><path d="M4 6v12" /><path d="M12 6v12" /><path d="M11 18h2" /><path d="M3 18h2" /><path d="M4 12h8" /><path d="M3 6h2" /><path d="M11 6h2" /></svg>');
+}
+
+button[title="Level 2 Headline [2]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-h-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 12a2 2 0 1 1 4 0c0 .591 -.417 1.318 -.816 1.858l-3.184 4.143l4 0" /><path d="M4 6v12" /><path d="M12 6v12" /><path d="M11 18h2" /><path d="M3 18h2" /><path d="M4 12h8" /><path d="M3 6h2" /><path d="M11 6h2" /></svg>');
+}
+
+button[title="Level 3 Headline [3]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-h-3" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 14a2 2 0 1 0 -2 -2" /><path d="M17 16a2 2 0 1 0 2 -2" /><path d="M4 6v12" /><path d="M12 6v12" /><path d="M11 18h2" /><path d="M3 18h2" /><path d="M4 12h8" /><path d="M3 6h2" /><path d="M11 6h2" /></svg>');
+}
+
+button[title="Level 4 Headline [4]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-h-4" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 18v-8l-4 6h5" /><path d="M4 6v12" /><path d="M12 6v12" /><path d="M11 18h2" /><path d="M3 18h2" /><path d="M4 12h8" /><path d="M3 6h2" /><path d="M11 6h2" /></svg>');
+}
+
+button[title="Level 5 Headline [5]"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-h-5" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 18h2a2 2 0 1 0 0 -4h-2v-4h4" /><path d="M4 6v12" /><path d="M12 6v12" /><path d="M11 18h2" /><path d="M3 18h2" /><path d="M4 12h8" /><path d="M3 6h2" /><path d="M11 6h2" /></svg>');
+}
+
+button[title="columns"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-columns" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l5.5 0" /><path d="M4 10l5.5 0" /><path d="M4 14l5.5 0" /><path d="M4 18l5.5 0" /><path d="M14.5 6l5.5 0" /><path d="M14.5 10l5.5 0" /><path d="M14.5 14l5.5 0" /><path d="M14.5 18l5.5 0" /></svg>');
+}
+
+button[title="simple centered box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M12 12l0 9" /><path d="M12 12l-8 -4.5" /></svg>');
+}
+
+button[title="info box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%2374c0fc" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 9h.01" /><path d="M11 12h1v4h1" /></svg>');
+}
+
+button[title="tip box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffe066" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg>');
+}
+
+button[title="important box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffc078" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg>');
+}
+
+button[title="alert box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-octagon" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffa8a8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>');
+}
+
+button[title="help box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23e599f7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 17l0 .01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg>');
+}
+
+button[title="download box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%238ce99a" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>');
+}
+
+button[title="todo box"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-traffic-cone" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%2366d9e8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 20l16 0" /><path d="M9.4 10l5.2 0" /><path d="M7.8 15l8.4 0" /><path d="M6 20l5 -15h2l5 15" /></svg>');
+}
+
+button[title="clear floats"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clear-all" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 6h12" /><path d="M6 12h12" /><path d="M4 18h12" /></svg>');
+}
+
+button[title="especially emphasised"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-emphasis" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 5h-8v10h8m-1 -5h-7" /><path d="M6 20l0 .01" /><path d="M10 20l0 .01" /><path d="M14 20l0 .01" /><path d="M18 20l0 .01" /></svg>');
+}
+
+button[title="highlighted"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-highlight" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" /><path d="M12.5 5.5l4 4" /><path d="M4.5 13.5l4 4" /><path d="M21 15v4h-8l4 -4z" /></svg>');
+}
+
+button[title="less significant"]::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-subscript" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7l8 10m-8 0l8 -10" /><path d="M21 20h-4l3.5 -4a1.73 1.73 0 0 0 -3.5 -2" /></svg>');
+}
