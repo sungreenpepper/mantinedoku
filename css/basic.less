@@ -34,11 +34,13 @@
 
     --color-red-3: #ffa8a8;
     --color-red-4: #ff8787;
+    --color-red-5: #FF6B6B;
     --color-red-8: #e03131;
 
     --color-yellow-3: #ffe066;
     --color-yellow-5: #fcc419;
 
+    --color-orange-3: #ffc078;
     --color-orange-5: #ff922b;
 
     --color-violet-3: #b197fc;
@@ -784,4 +786,156 @@ a[title="Log Out"]:hover::before {
 
 .dokuwiki .wrap_lo {
     color: var(--color-dark-2) !important;
+}
+
+/* admin config */
+.dokuwiki div.ui-admin #admin__version {
+    font-size: 90%;
+    color: var(--color-dark-2) !important;
+    font-style: italic;
+}
+
+#acl__tree a.cur {
+    background-color: var(--color-yellow-5);
+    color: #000;
+    padding: 0.125rem 0.25rem;
+}
+
+.dokuwiki div.ui-admin ul li a {
+    align-items: center;
+}
+
+.dokuwiki div.ui-admin ul li a span.icon {
+    height: 1.75rem;
+}
+
+
+.dokuwiki div.ui-admin ul li a span.icon svg {
+    display: none !important;
+}
+
+.dokuwiki div.ui-admin ul li a span.icon::before {
+    display: inline-block;
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=acl"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-key" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.555 3.843l3.602 3.602a2.877 2.877 0 0 1 0 4.069l-2.643 2.643a2.877 2.877 0 0 1 -4.069 0l-.301 -.301l-6.558 6.558a2 2 0 0 1 -1.239 .578l-.175 .008h-1.172a1 1 0 0 1 -.993 -.883l-.007 -.117v-1.172a2 2 0 0 1 .467 -1.284l.119 -.13l.414 -.414h2v-2h2v-2l2.144 -2.144l-.301 -.301a2.877 2.877 0 0 1 0 -4.069l2.643 -2.643a2.877 2.877 0 0 1 4.069 0z" /><path d="M15 9h.01" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=config"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=extension"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-puzzle" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=styling"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" /><path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=usermanager"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=logviewer"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-script" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 20h-11a3 3 0 0 1 0 -6h11a3 3 0 0 0 0 6h1a3 3 0 0 0 3 -3v-11a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v8" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=popularity"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>');
+}
+
+.dokuwiki div.ui-admin ul li a[href="/doku.php?id=start&do=admin&page=revert"] span.icon::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14l-4 -4l4 -4" /><path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg>');
+}
+
+/* config manager icons */
+#config__manager td.label {
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+#config__manager td.label span.outkey + img[src="/lib/plugins/config/images/warning.png"],
+#config__manager td.label span.outkey + img[src="/lib/plugins/config/images/danger.png"],
+#config__manager td.label span.outkey + img[src="/lib/plugins/config/images/security.png"] {
+    display: none;
+}
+
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/warning.png"]):after,
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/danger.png"]):after,
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/security.png"]):after {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/warning.png"]):after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23fcc419" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg>');
+}
+
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/danger.png"]):after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-circle" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23FF6B6B" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg>');
+}
+
+#config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/security.png"]):after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" /><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M8 11v-4a4 4 0 1 1 8 0v4" /></svg>');
+}
+
+/* extension manager */
+button.uninstall,
+button.disable,
+button.reinstall,
+button.enable {
+    border-color: transparent;
+}
+
+button.uninstall {
+    background-color: rgba(250,82,82,.15);
+    color: var(--color-red-3);
+}
+button.uninstall:hover{
+    background-color: rgba(250,82,82,.2);
+}
+
+button.disable {
+    background-color: rgba(253,126,20,.15);
+    color: var(--color-orange-3);
+}
+button.disable:hover {
+    background-color: rgba(253,126,20,.2);
+}
+
+button.reinstall {
+    background-color: rgba(121,80,242,.15);
+    color: var(--color-violet-3);
+}
+button.reinstall:hover {
+    background-color: rgba(121,80,242,.2);
+}
+
+button.enable {
+    background-color: rgba(64,192,87,.15);
+    color: var(--color-green-3);
+}
+button.enable:hover {
+    background-color: rgba(64,192,87,.2);
+}
+
+#extension__list .legend a.info,
+#extension__list .legend a.info.close {
+    border-radius: 0.25rem;
+}
+
+#extension__list .legend a.info {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="13" height="13" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>');
+}
+
+#extension__list .legend a.info.close {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="13" height="13" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>');
+}
+
+#extension__list .legend a.info:hover,
+#extension__list .legend a.info.close:hover {
+    background-color: var(--color-dark-6);
 }
