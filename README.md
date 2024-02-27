@@ -10,6 +10,8 @@ There's nothing wrong with the default theme, that's why this template stays tru
 
 [Tabler Icons](https://tabler.io/icons) have been used to replace all existing icons with these beautiful line works.
 
+---
+
 Enough talking! Here are the screenshots:
 - `Content render`
   - <img  src="https://github.com/sungreenpepper/mantinedoku/assets/159649930/2c827360-8443-4fcb-a577-f8fa66987d01" />
