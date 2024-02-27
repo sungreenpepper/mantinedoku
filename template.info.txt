@@ -1,4 +1,4 @@
-base     mantinewiki
+base     mantinedoku
 author   sungreenpepper
 email    sungreenpepper@outlook.com
 date     2024-02-24
