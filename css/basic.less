@@ -859,6 +859,8 @@ a[title="Log Out"]:hover::before {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%234dabf7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14l-4 -4l4 -4" /><path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg>');
 }
 
+
+
 /* Access Control List Management */
 #acl_manager .aclpage {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /></svg>');
@@ -1063,6 +1065,18 @@ textarea:read-only {
 
 #config__manager td.label:has(> span.outkey + img[src="/lib/plugins/config/images/security.png"]):after {
     content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23828282" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" /><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M8 11v-4a4 4 0 1 1 8 0v4" /></svg>');
+}
+
+#config__manager tr .input,
+#config__manager tr input,
+#config__manager tr textarea,
+#config__manager tr select {
+    background-color: var(--color-dark-6);
+    color: var(--color-dark-1);
+}
+
+select.edit option {
+    background-color: var(--color-dark-6);
 }
 
 /* extension manager */
