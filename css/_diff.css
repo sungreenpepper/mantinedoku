@@ -143,6 +143,9 @@
 .dokuwiki .diffnav a {
     display: inline-block;
     vertical-align: middle;
+    height: 2.125em;
+    border-radius: 0.25rem;
+    border: 1px solid @ini_border;
 }
 .dokuwiki .diffnav a span {
     display: none;
@@ -164,13 +167,14 @@
 .dokuwiki .diffnav a:focus {
     background-color: var(--color-dark-6);
     text-decoration: none;
+    border-radius: 0.25rem;
 }
 
 .dokuwiki .diffnav a:before {
     display: inline-block;
-    border: 1px solid @ini_border;
-    border-radius: 0.25rem;
     color: @ini_text;
+    height: 100%;
+    margin-top: 0.3125rem;
 }
 
 .dokuwiki .diffnav a.diffprevrev:before {
@@ -190,7 +194,7 @@
 .dokuwiki .diffnav select {
     width: 60%;
     min-width: 9em;
-    height: 1.5em; /* height is necessary for longer options in Webkit */
+    height: 2.25em; /* height is necessary for longer options in Webkit */
 }
 
 .dokuwiki .diffnav select option[selected] {
