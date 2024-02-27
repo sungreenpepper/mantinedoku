@@ -20,6 +20,7 @@
     --color-dark-6: #2e2e2e;
     --color-dark-7: #242424;
     --color-dark-8: #1F1F1F;
+    --color-dark-9: #141414;
 
     --color-gray-4:#ced4da;
     --color-gray-7: #495057;
@@ -1127,6 +1128,10 @@ button.enable:hover {
     border-top: solid 1px @ini_border;
 }
 
+.table th {
+    background-color: var(--color-dark-8);
+}
+
 /* edittable plugin */
 .htContextMenu table.htCore,
 .htContextMenu table.htCore tbody {
@@ -1161,6 +1166,7 @@ button.enable:hover {
 .htContextMenu table tbody tr td.htDisabled,
 .htContextMenu table tbody tr td.htDisabled:hover {
     background-color: var(--color-dark-8);
+    color: var(--color-dark-3);
     cursor: not-allowed;
 }
 
@@ -1214,4 +1220,69 @@ button.enable:hover {
 
 .htContextMenu table tbody tr td div.htItemWrapper.mergeCells div.unmerge {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table" width="18" height="18" viewBox="0 2 24 24" stroke-width="1.5" stroke="%23b8b8b8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" /><path d="M3 10h18" /><path d="M10 3v18" /></svg>');
+}
+
+/* edittable hands on table */
+
+/* header of the editor */
+#edittable__editor table.htCore th,
+#edittable__editor table.htCore td.header,
+#edittable__editor table.htCore td {
+    border-color: @ini_border;
+}
+
+#edittable__editor table.htCore th {
+    background-color: var(--color-dark-8);
+    color: var(--color-dark-1);
+    font-weight: bold;
+}
+#edittable__editor table.htCore th:hover {
+    background-color: var(--color-dark-9);
+}
+
+/* normal cells */
+#edittable__editor table.htCore td {
+    background-color: var(--color-dark-7);
+}
+#edittable__editor table.htCore td:hover {
+    background-color: var(--color-dark-6);
+}
+
+/* header styles in editor */
+#edittable__editor table td.header {
+    background-color: var(--color-dark-8);
+}
+#edittable__editor table td.header:hover {
+    background-color: var(--color-dark-9);
+}
+
+div.wtBorder.current {
+    background-color: var(--color-blue-4) !important;
+}
+
+.handsontable .wtBorder {
+    background-color: var(--color-blue-4) !important;
+}
+
+.handsontable tr {
+    background: var(--color-dark-8);
+}
+
+.handsontable td.area {
+    background: var(--color-blue-light) !important;
+}
+
+.handsontable tbody th.ht__highlight,
+.handsontable thead th.ht__highlight {
+    background: var(--color-blue-light) !important;
+    color: var(--color-blue-3) !important;
+}
+.handsontable tbody th.ht__highlight:hover,
+.handsontable thead th.ht__highlight:hover {
+    background: var(--color-blue-light-hover) !important;
+}
+
+.handsontableInput {
+    background-color: transparent;
+    color: #fff;
 }
