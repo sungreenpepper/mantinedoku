@@ -206,3 +206,11 @@ html.popup {
 }
 #dw__mediasearch button {
 }
+
+.ui-widget.ui-widget-content {
+    background-color: @ini_background;
+}
+
+.ui-dialog .ui-dialog-content {
+    color: var(--color-dark-1);
+}
