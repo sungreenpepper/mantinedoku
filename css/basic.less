@@ -1363,8 +1363,14 @@ div.wtBorder.current {
 }
 
 /* Diagrams plugin */
+.diagrams-svg {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
 .diagrams-buttons {
     text-align: center;
+    margin-top: -7px;
 }
 
 button[title="Open diagram"],
@@ -1377,6 +1383,8 @@ button[title="Edit diagram"] {
     border-color: var(--color-gray-8);
     font-weight: bold;
     position: relative;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 button[title="Open diagram"]:hover,
@@ -1384,6 +1392,12 @@ button[title="Download diagram as SVG"]:hover,
 button[title="Edit diagram"]:hover {
     background-color: var(--color-gray-7);
     border-color: var(--color-gray-7);
+}
+
+object.diagrams-svg:has(+ div.diagrams-buttons button[title="Open diagram"]:hover),
+object.diagrams-svg:has(+ div.diagrams-buttons button[title="Download diagram as SVG"]:hover),
+object.diagrams-svg:has(+ div.diagrams-buttons button[title="Edit diagram"]:hover) {
+    background-color: var(--color-dark-7);
 }
 
 button[title="Open diagram"] span.icon-open svg,
