@@ -1361,3 +1361,53 @@ div.wtBorder.current {
     background-color: transparent;
     color: #fff;
 }
+
+/* Diagrams plugin */
+.diagrams-buttons {
+    text-align: center;
+}
+
+button[title="Open diagram"],
+button[title="Download diagram as SVG"],
+button[title="Edit diagram"] {
+    font-size: 75%;
+    padding: 0.25rem;
+    padding-left: 1.25rem;
+    background-color: var(--color-gray-8);
+    border-color: var(--color-gray-8);
+    font-weight: bold;
+    position: relative;
+}
+
+button[title="Open diagram"]:hover,
+button[title="Download diagram as SVG"]:hover,
+button[title="Edit diagram"]:hover {
+    background-color: var(--color-gray-7);
+    border-color: var(--color-gray-7);
+}
+
+button[title="Open diagram"] span.icon-open svg,
+button[title="Download diagram as SVG"] span.icon-download svg,
+button[title="Edit diagram"] span.icon-edit svg {
+    display: none;
+}
+
+button[title="Open diagram"] span.icon-open::before,
+button[title="Download diagram as SVG"] span.icon-download::before,
+button[title="Edit diagram"] span.icon-edit::before {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+
+button[title="Open diagram"] span.icon-open::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>');
+}
+
+button[title="Download diagram as SVG"] span.icon-download::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>')
+}
+
+button[title="Edit diagram"] span.icon-edit::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>');
+}
