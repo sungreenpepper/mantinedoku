@@ -222,3 +222,45 @@ html.popup {
 .mf_png {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-type-png" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M20 15h-1a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h1v-3" /><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M11 21v-6l3 6v-6" /></svg>');
 }
+
+a:has(img[src="/lib/images/magnifier.png"]),
+a:has(img[src="/lib/images/mediamanager.png"]),
+a:has(img[src="/lib/images/trash.png"]) {
+    position: relative;
+    border-radius: 0.25rem;
+    padding: 0.125rem;
+}
+
+a:has(img[src="/lib/images/magnifier.png"]):hover,
+a:has(img[src="/lib/images/mediamanager.png"]):hover {
+    background-color: var(--color-dark-6);
+}
+
+a:has(img[src="/lib/images/trash.png"]):hover {
+    background-color: var(--color-red-light);
+}
+
+a:has(img[src="/lib/images/magnifier.png"]) img,
+a:has(img[src="/lib/images/mediamanager.png"]) img,
+a:has(img[src="/lib/images/trash.png"]) img {
+    opacity: 0;
+}
+
+a:has(img[src="/lib/images/magnifier.png"])::before,
+a:has(img[src="/lib/images/mediamanager.png"])::before,
+a:has(img[src="/lib/images/trash.png"])::before {
+    position: absolute;
+    top: 2px;
+}
+
+a:has(img[src="/lib/images/magnifier.png"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>');
+}
+
+a:has(img[src="/lib/images/mediamanager.png"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-table" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" /><path d="M3 10h18" /><path d="M10 3v18" /></svg>');
+}
+
+a:has(img[src="/lib/images/trash.png"])::before {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffa8a8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>');
+}
